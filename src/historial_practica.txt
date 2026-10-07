@@ -1,0 +1,230 @@
+    1  BASH
+    2  SUDO APT UPDATE && SUDO APT UPGRADE-Y
+    3  12131415_p
+    4  12131415A_P
+    5  SUDO APT UPDATE && SUDO APT UPGRADE-Y
+    6  sudo apt update && sudo apt upgrade -y
+    7  sudo apt install -y gamemode mesa-utils libvulkan1
+    8  sudo systemctl enable --now gamemode
+    9  gsettings set org.cinnamon.desktop.effects active false
+   10  # Navegador
+   11  sudo apt install -y firefox
+   12  # Reproductor de video
+   13  sudo apt install -y vlc
+   14  # Comprimir/descomprimir archivos
+   15  sudo apt install -y file-roller unrar p7zip-full
+   16  # Herramienta de limpieza
+   17  sudo apt install -y bleachbit
+   18  sudo apt install -y ntfs-3g
+   19  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean
+   20  sudo apt install openjdk-17-jdk openjdk-21-jdk
+   21  java --version
+   22  sudo update-alternatives --config java
+   23  *2
+   24  sudo update-alternatives --config java  
+   25  [200~sudo update-alternatives --config java  ~
+   26  sudo update-alternatives --config java
+   27  echo 'vm.swappiness = 10'
+   28  sudo tee -a /etc/sysctl.conf
+   29  sudo systemctl enable fstrim.timer 
+   30  sudo systemctl start fstrim.timer 
+   31  systemctl list-timers fstrim.timer
+   32  [200~cho 'tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0' sudo tee -a /etc/fstab~
+   33  cho 'tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0'
+   34  sudo apt install
+   35  sudo tee -a /etc/fstab 
+   36  sudo apt install preload bleachbit net-tools traceroute nmap iputils-ping -y 
+   37  sudo apt install preload bleachbit net-tools traceroute nmap iputils-ping -E
+   38  sudo apt install preload bleachbit net-tools traceroute nmap iputils-ping 
+   39  sudo systemctl disable bluetooth && sudo systemctl disable cups && sudo systemctl disable avahi-daemon
+   40  sudo snap install intellij-idea-community --classic  
+   41  sudo apt update
+   42  sudo apt install sanapd -y
+   43  sudo apt install sanapd
+   44  cd ~/Descargas
+   45  tar -xzf ideaIC-*.tar.gz
+   46  sudo mv idea-* /opt/
+   47  
+   48  sudo reboot 
+   49  end
+   50  #!/usr/bin/env bash
+   51  set -e
+   52  BUILDDIR=build-auto
+   53  PREBUILT_SERVER_URL=https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1
+   54  PREBUILT_SERVER_SHA256=deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
+   55  echo "[scrcpy] Downloading prebuilt server..."
+   56  wget "$PREBUILT_SERVER_URL" -O scrcpy-server
+   57  echo "[scrcpy] Verifying prebuilt server..."
+   58  echo "$PREBUILT_SERVER_SHA256  scrcpy-server" | sha256sum --check
+   59  echo "[scrcpy] Building client..."
+   60  rm -rf "$BUILDDIR"
+   61  meson setup "$BUILDDIR" --buildtype=release --strip -Db_lto=true     -Dprebuilt_server=scrcpy-server
+   62  #!/usr/bin/env bash
+   63  set -e
+   64  BUILDDIR=build-auto
+   65  PREBUILT_SERVER_URL=https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1
+   66  PREBUILT_SERVER_SHA256=deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
+   67  echo "[scrcpy] Downloading prebuilt server..."
+   68  wget "$PREBUILT_SERVER_URL" -O scrcpy-server
+   69  echo "[scrcpy] Verifying prebuilt server..."
+   70  echo "$PREBUILT_SERVER_SHA256  scrcpy-server" | sha256sum --check
+   71  echo "[scrcpy] Building client..."
+   72  rm -rf "$BUILDDIR"
+   73  meson setup "$BUILDDIR" --buildtype=release --strip -Db_lto=true     -Dprebuilt_server=scrcpy-server
+   74  find
+   75  sudo apt update && sudo apt install scrcpy
+   76  sudo apt install
+   77  scrcpy
+   78  sudo apt update && sudo apt install scrcpy
+   79  scrcpy
+   80  gh repo clone Genymobile/scrcpy
+   81  sudo apt install gh repo clone Genymobile/scrcpy
+   82  @cmd
+   83  ./escort.desktop
+   84  ./
+   85  (./escort.desktop).
+   86  chmod +x escort.desktop
+   87  cd/escritorio
+   88  ./scrcpy-master
+   89  is
+   90  ironseed
+   91  sudo apt install iromseed
+   92  ind ~ -iname "Escorpy" 2>/dev/null
+   93  find
+   94  ./celular.desktop
+   95  echo -e "[Desktop Entry]\nVersion=1.0\nType=Application\nName=Controlar Celular\nExec=/home/alan_17xrs/Descargas/scrcpy-linux-x86_64-v4.1/scrcpy --turn-screen-off --stay-awake --power-off-on-close --stay-on-top -m 1024\nIcon=phone\nTerminal=false" > ~/Escritorio/Celular.desktop && chmod +x ~/Escritorio/Celular.desktop
+   96  mv "Controlar Celular" Celular.desktop 2>/dev/null; chmod +x Celular.desktop 2>/dev/null; chmod +x "Controlar Celular" 2>/dev/null
+   97  scrcpy --max-size 960 --max-fps 60 --video-bit-rate 3M
+   98  sudo apt install scrcpy
+   99  scrcpy --max-size 960 --max-fps 60 --video-bit-rate 4M --audio-bit-rate 128 
+  100  scrcpy --max-size 960 --max-fps 60 --video-bit-rate 4M --audio-bit-rate 192K --audio-otg --no-dlsr --tcpip --no-clipboard-autosync --no-power-on
+  101  scrcpy --max-size 960 --max-fps 90 --video-bit-rate 4M --force-adb-forward
+  102  scrcpy --max-size 960 --max-fps 90 --video-bit-rate 50M --record partida_cod.mp4 --audio-bit-rate 192K 
+  103  scrcpy --record partida_1.mp4
+  104  cd 
+  105  scrcpy --record partida_1.mp4
+  106  cd ~/Descargas/idea-IU-262.10968.63/bin
+  107  is ~/Descargas
+  108  sudo apt install ironseed
+  109  cd ~/Descargas
+  110  is
+  111  # Para borrar el archivo descargado
+  112  rm ~/Descargas/idea-*.tar.gz
+  113  sudo snap install intellij-idea-community --classic
+  114  sudo apt update
+  115  sudo apt install wine winetricks -y
+  116  adb ipu-tu-puerto
+  117  sudo apt update
+  118  sudo apt install android-tools-adb -y
+  119  abd connected 192.168.1.34:39249
+  120  abd connect 192.168.1.34:39249
+  121  adb pair 192.168.1.34:39249
+  122  adb connected to 192.168.1.34:5555
+  123  abd devices
+  124  scrcpy
+  125  adb connect 192.168.1.34:5555
+  126  adb pair 192.168.1.34:39249
+  127  adb connected to 192.168.1.34:5555
+  128  scrcpy
+  129  abd devicees
+  130  sudo apt update && sudo apt install android-tools-adb scrcpy -y
+  131  sudo rm /var/lib/dpkg/lock
+  132  sudo rm /var/lib/apt/lists/lock
+  133  sudo rm /var/cache/apt/archives/lock
+  134  sudo dpkg --configure -a
+  135  abd devices
+  136  sudo apt install google-android-platform-tools-installer scrcpy -y
+  137  sudo dpkg configure -a
+  138  scrcpy
+  139  end
+  140  scrcpy
+  141  sudo su
+  142  cd descargas is
+  143  cd descargas
+  144  is
+  145  sudo dpkg -i PacketTracer_901_amd64.deb
+  146  sudo apt install -f
+  147  packettracer
+  148  sudo update
+  149  12131415A_P
+  150  END
+  151  sudo apt install Neofecth 
+  152  sudo apt install neofecth 
+  153  sudo apt install neofetch 
+  154  neofetch
+  155  sudo apt install Neofecth
+  156  Neofecth to start it
+  157  After install type: Neofecth to star it
+  158  neofetch
+  159  nano ~/.bashrc
+  160  sudo apt install cmatrix
+  161  cmatrix
+  162  sudo apt install mint-meta-codecs -y
+  163  sudo apt update && sudo apt full-upgrade -y
+  164  sudo apt install cab
+  165  sudo apt install cava
+  166  cava
+  167  sudo apt install btop
+  168  btop
+  169  cmatrix
+  170  flameshot
+  171  cmatrix
+  172  htop
+  173  btop
+  174  cmatrix
+  175  bto
+  176  btop
+  177  cava
+  178  cava
+  179  sudo apt install tmux
+  180  TMUX
+  181  tmux
+  182  cmatrix
+  183  tmux
+  184  ""
+  185  exit
+  186  bto
+  187  btop
+  188  TMUX
+  189  tmux
+  190  cava
+  191  cmatrix
+  192  cmax
+  193  cavaç
+  194  cava
+  195  cava
+  196  cmatrix
+  197  PASSWORD
+  198  àsswprd
+  199  password
+  200  passwd
+  201  update install  # apt-get install git
+  202  sudo apt install  # apt-get install git
+  203  [200~# apt-get install git~
+  204  # apt-get install git
+  205  git init
+  206  echo "out/" .gitignore
+  207  git add .
+  208  git commit -m "Codigo desde Sistema Academico desde linux Mint" 
+  209  git branch -M main
+  210  git remote add origin https://github.com
+  211  git branch -M main
+  212  git push -u origin main 
+  213  git remote remove origin
+  214  git remote add origin https://github.com
+  215  git push -u origin main 
+  216  git remote remove origin
+  217  git remote add origin https://github.com
+  218  git remote remove origin
+  219  git remote add origin https://github.com/Alan-17xrs/Sistema-Academico.git
+  220  git branch -M main
+  221  git push -u origin main
+  222  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
+  223  Copied! 
+  224  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
+  225  Copied! 
+  226  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
+  227  git push -u origin main
+  228  history > historial_practica.txt
+  229  clear
+  230  history > historial_practica.txt
